@@ -1,9 +1,13 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo "No dependencies to install for a static site."
   build:
     commands:
-      - echo "No build needed for HTML site"
+      - echo "Build completed successfully. No build needed for static content."
+
 artifacts:
   files:
-    - '**/*'
+    - '**/*'  # This includes everything in your repository (HTML, CSS, JS)
